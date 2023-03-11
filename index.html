@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>raft mods</title>
+</head>
+<body>
+  <a href="#" class="download">download</a>
+</body>
+
+<script>
+const mods = [
+  "rmllauncher://installmod/inventory-caching",
+  "rmllauncher://installmod/glass-walls",
+  "rmllauncher://installmod/stackable-placeables",
+  "rmllauncher://installmod/custommovingspeed",
+  "rmllauncher://installmod/furniture-mod",
+  "rmllauncher://installmod/benevolent-sprites",
+  "rmllauncher://installmod/electricity-mod",
+  "rmllauncher://installmod/abc",
+  "rmllauncher://installmod/nomoreuselesspalms",
+  "rmllauncher://installmod/teleport-to-others",
+  "rmllauncher://installmod/more-trash-redux",
+  "rmllauncher://installmod/auto-sorter",
+  "rmllauncher://installmod/unityexplorer",
+  "rmllauncher://installmod/name-your-shark",
+  "rmllauncher://installmod/biggerplots",
+  "rmllauncher://installmod/recycle-your-metal",
+  "rmllauncher://installmod/playable-tic-tac-toe",
+  "rmllauncher://installmod/modupdater",
+  "rmllauncher://installmod/diagonal-pillars",
+  "rmllauncher://installmod/ui-scaler-redux",
+]
+
+document.querySelector(".download").addEventListener("click", () => {
+  mods.forEach(v => {
+    const a = document.createElement("a");
+    a.href = v;
+    a.click();
+    a.remove();
+  })
+})
+</script>
+</html>
